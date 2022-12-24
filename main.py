@@ -45,7 +45,7 @@ def iterate_through_files(directory, delete_json):
         modified_time = datetime.fromtimestamp(int(json_object["photoLastModifiedTime"]["timestamp"]))
 
         print("--Creation time: " + str(creation_time))
-        print("--Modified time: " + str(creation_time))
+        print("--Modified time: " + str(modified_time))
         print("\n")
 
         test = filedate.File(complete_path)
