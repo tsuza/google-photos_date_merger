@@ -19,9 +19,6 @@
     <img
         src="https://img.shields.io/github/repo-size/zabaniya001/google-photos_date_merger"
     />
-    <img
-        src="https://img.shields.io/github/workflow/status/zabaniya001/google-photos_date_merger/Compile%20and%20release"
-    />
   </p>
 </div>
 
