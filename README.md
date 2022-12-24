@@ -36,4 +36,4 @@
 2) Go to the path of the script ( `cd <folder where the script resides in>` )
 3) Write in the cmd `py main.py`
 4) Paste the folder where the exported google photos are in.
-5) Type `y` if you want to delete the json files ( images and the metadata, which are files that contain informations like when the image was created and such, are separate files and are not necessary once you merge the dates ).
+5) Type `y` if you want to delete the json files ( images and the metadata, which are files that contain information like when the image was created and such, are separate files and are not necessary once you merge the dates ).
