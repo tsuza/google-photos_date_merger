@@ -22,7 +22,7 @@ def iterate_through_files(directory, delete_json):
         complete_path = os.path.join(directory, filename)
 
         if os.path.isdir(complete_path):
-            iterate_through_files(complete_path)
+            iterate_through_files(complete_path, delete_json)
 
         if ".json" in filename:
             continue
@@ -34,15 +34,15 @@ def iterate_through_files(directory, delete_json):
             continue
 
         print(complete_path)
-        
+
         with open(json_path, "r", encoding="utf8") as json_file:
             json_object = json.loads(json_file.read())
         
         if delete_json:
             os.remove(json_path)
-        
+
         creation_time = datetime.fromtimestamp(int(json_object["photoTakenTime"]["timestamp"]))
-        modified_time = datetime.fromtimestamp(int(json_object["photoLastModifiedTime"]["timestamp"]))
+        modified_time = datetime.fromtimestamp(int(json_object["creationTime"]["timestamp"]))
 
         print("--Creation time: " + str(creation_time))
         print("--Modified time: " + str(modified_time))
